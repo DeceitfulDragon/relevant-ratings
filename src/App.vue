@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="bg-gray-900 text-white font-sans">
-    <header class="p-6 bg-gray-800 shadow-lg flex items-center justify-between">
-      <div class="flex items-center space-x-4">
+    <header class="p-6 bg-gray-800 shadow-lg flex flex-col md:flex-row md:items-center justify-between">
+      <div class="flex items-center space-x-4 mb-4 md:mb-0">
         <!-- Movie Form Button -->
         <button @click="toggleForm" class="bg-cyan-500 hover:bg-cyan-600 text-white rounded-full h-12 w-12 flex items-center justify-center">
           <span class="text-2xl">+</span>
@@ -10,10 +10,10 @@
       </div>
 
       <!-- Save, Load, and API Key Buttons -->
-      <div class="flex items-center space-x-4">
-        <button @click="saveMoviesToFile" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-2 ml-4 rounded"><i class="fa-solid fa-floppy-disk"></i> Save</button>
+      <div class="flex flex-wrap items-center space-x-4">
+        <button @click="saveMoviesToFile" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-2 rounded mb-2 md:mb-0"><i class="fa-solid fa-floppy-disk"></i> Save</button>
         <input type="file" @change="loadMoviesFromFile" class="hidden" ref="fileInput" />
-        <button @click="triggerFileInput" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-2 rounded"><i class="fa-solid fa-upload"></i> Load</button>
+        <button @click="triggerFileInput" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-2 rounded mb-2 md:mb-0"><i class="fa-solid fa-upload"></i> Load</button>
         <button @click="showApiKeyModal" class="bg-cyan-500 hover:bg-cyan-600 text-white py-2 px-2 rounded"><i class="fa-solid fa-key"></i> Set API Key</button>
       </div>
     </header>
