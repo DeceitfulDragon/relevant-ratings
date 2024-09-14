@@ -70,7 +70,7 @@ export default {
       }
 
       if (this.movieSearch.length > 2) {
-        fetch(`http://www.omdbapi.com/?s=${this.movieSearch}&apikey=${apiKey}`)
+        fetch(`https://www.omdbapi.com/?s=${this.movieSearch}&apikey=${apiKey}`)
           .then(response => response.json())
           .then(data => {
             if (data.Search) {
@@ -94,7 +94,7 @@ export default {
         return;
       }
 
-      fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`)
+      fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=${apiKey}`)
         .then(response => response.json())
         .then(data => {
           this.selectedMovie = data;
