@@ -3,7 +3,7 @@
 
 **Relevant Ratings** is a personal movie rating web app built with Vue.js, allowing you to search for movies, add personal ratings, and save reviews. The site uses the OMDb (Open Movie Database) API to fetch movie details like titles, genres, directors, and IMDb ratings.
 
-![Screenshot](screenshot.png "Screenshot")
+![Screenshot](readme_image.png "Screenshot")
 
 I began this project after watching movies with my friends and discussing that we wanted something we could use to log all the things we had watched. We often rate them and give our thoughts, so I also implemented rating and review capabilities. Now we can view the movies we've watched before while also seeing how we thought about them! It also has the ability to save and load a JSON file with all the information that's stored in local storage, just in case you wanna share it with your friends!
 
